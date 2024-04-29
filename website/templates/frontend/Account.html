@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <title>{{user.type}}</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='frontend/account.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+
+<body class="Page">
+
+  <section class="user-name">
+    <div class="user-name-text">Welcome, to {{user.type}}</div>
+  </section>
+  <section class="balance-card-div">
+
+    <div class="fixed-module-card-div">
+      <a href="#" id="balance-border">
+        <div class="navbar-card-div">
+          <div class="inner-card-div" >
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="139" height="139" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+              <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4z"></path>
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+              </path>
+            </svg> -->
+            <div class="balance-text">
+              ${{user.balance}}
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+  <section class="balance-card-div" id="transaction-div">
+    <form action="/account/{{ user.id }}/deposit" method="POST">
+      <input class="fields" type="number" name="amount" placeholder="Enter deposit amount" required>
+      <button type="submit" class="individual-buttons">
+          <div class="button-text">Deposit</div>
+      </button>
+  </form>
+  <!-- Withdraw Form -->
+  <form action="/account/{{ user.id }}/withdraw" method="POST">
+      <input class="fields" type="number" name="amount" placeholder="Enter withdrawal amount" required>
+      <button type="submit" class="individual-buttons">
+          <div class="button-text">Withdraw</div>
+      </button>
+  </form>
+
+  <form action="/account/{{ user.id }}/delete" method="POST">
+    <button type="submit" class="individual-buttons">
+      <div class="button-text">Delete Account</div>
+  </button>
+</form>
+
+  </section>
+  <section class="balance-card-div" id="transaction-div">
+    <h1 style="width: 100%;">Transactions
+    </h1>
+    {% for transaction in user.transactions %}
+    <div class="fixed-module-card-div">
+      <div class="navbar-card-div">
+        <div class="ul-container">
+          <a href="#Basic_Information">
+            <div class="inner-card-div">
+              <h1>{{transaction.date}}</h1>
+            </div>
+          </a>
+          <a href="#Security_Privacy">
+            <div class="inner-card-div">
+              <h1>{{transaction.type}}: ${{transaction.amount}}</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+
+  </section>
+  
+ 
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+    role="banner" class="vertical-navbar-created" id="navbar">
+    <div class="style-5">
+      <a href="#" class="style-6"></a>
+      <nav role="navigation" class="style-7">
+        <a href="/" class="individual-buttons">
+          <div class="button-text">Home</div>
+        </a>
+        <a href="/homeview" class="individual-buttons">
+          <div class="button-text">Accounts</div>
+        </a>
+
+
+      </nav>
+
+      <nav role="navigation" class="button-box" id="specialboxes">
+        <a href="/settings" class="individual-specialboxes" id="Settings">
+          <div class="button-text">Settings</div>
+        </a>
+        <a href="/logout" class="individual-specialboxes" id="Logout">
+
+          <div class="button-text">Logout</div>
+        </a>
+        <a href="#" class="individual-specialboxes" id="Help">
+
+          <div class="button-text">Help</div>
+        </a>
+      </nav>
+      <div class="style-11" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0"
+        aria-haspopup="menu" aria-expanded="false">
+        <div class="style-12"></div>
+      </div>
+    </div>
+    <div class="style-13" data-wf-ignore=""></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='frontend/index.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='index.js') }}"></script> -->
+</body>
+
+</html>

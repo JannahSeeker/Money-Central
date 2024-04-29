@@ -1,0 +1,146 @@
+<html>
+
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='frontend/settings.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+
+<body class="Page">
+  <section class="user-name">
+    <div class="user-name-text">Hello, {{user.first_name}}!</div>
+  </section>
+  <section class="card-div">
+    <div class="fixed-module-card-div" id="navbar-holder">
+      <div class="navbar-card-div" id="fixed-position">
+        <div class="ul-container">
+          <a href="#Basic_Information">
+          <div class="inner-card-div">
+            <h1>Basic Information</h1>
+          </div>
+          </a>
+          <a href="#Security_Privacy">
+          <div class="inner-card-div">
+            <h1>Security Privacy</h1>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right-fixed-module-card-div" id="right-fixed-position">
+
+      <div class="module-card-div" id="Basic_Information">
+        <div class="ul-container">
+        <div class="holder-card-div">
+          <div class="side-card-div">
+            <h1>First Name</h1>
+          </div>
+          <div class="side-card-div">
+            <h1>{{user.first_name}}</h1>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z"></path></svg>
+          </div>
+        </div>
+        <div class="holder-card-div">
+          <div class="side-card-div">
+            <h1>Last Name</h1>
+          </div>
+          <div class="side-card-div">
+            <h1>{{user.last_name}}</h1>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z"></path></svg>
+          </div>
+        </div>
+        <div class="holder-card-div">
+          <div class="side-card-div">
+            <h1>Phone Number</h1>
+          </div>
+          <div class="side-card-div">
+            <h1>{{user.phone_number}}</h1>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z"></path></svg>
+          </div>
+        </div>
+        
+        
+
+
+        </div>
+      </div>
+      <div class="module-card-div" id="Basic_Information">
+        <div class="ul-container">
+        <div class="holder-card-div">
+          <div class="side-card-div">
+            <h1>Email</h1>
+          </div>
+          <div class="side-card-div">
+            <h1>{{user.email}}</h1>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z"></path></svg>
+          </div>
+        </div>
+        <div class="holder-card-div">
+          <div class="side-card-div">
+            <h1>Password</h1>
+          </div>
+          <div class="side-card-div">
+            <h1>*********</h1>
+          </div>
+          <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z"></path></svg>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+    
+  </section>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+    role="banner" class="vertical-navbar-created" id="navbar">
+    <div class="style-5">
+      <a href="#" class="style-6"></a>
+      <nav role="navigation" class="style-7">
+        <a href="/" class="individual-buttons">
+          <div class="button-text">Home</div>
+        </a>
+        <a href="/homeview" class="individual-buttons">
+          <div class="button-text">Accounts</div>
+        </a>
+
+
+      </nav>
+
+      <nav role="navigation" class="button-box" id="specialboxes">
+        <a href="/settings" class="individual-specialboxes" id="Settings">
+          <div class="button-text">Settings</div>
+        </a>
+        <a href="/logout" class="individual-specialboxes" id="Logout">
+
+          <div class="button-text">Logout</div>
+        </a>
+        <a href="#" class="individual-specialboxes" id="Help">
+
+          <div class="button-text">Help</div>
+        </a>
+      </nav>
+      <div class="style-11" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0"
+        aria-haspopup="menu" aria-expanded="false">
+        <div class="style-12"></div>
+      </div>
+    </div>
+    <div class="style-13" data-wf-ignore=""></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='frontend/home_page.js') }}"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>

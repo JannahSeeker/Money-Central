@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dollar Central</title>
+    <link rel="stylesheet" href="..\..\static\bank_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="icon" type="image/png" href="../../website/static/images/Dollar General Logo (PNG).png"> -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body class="style-0">
+    <div class="style-1">
+        <div class="style-2" data-background="dark">
+            <div class="style-3">
+                <div class="style-4"></div>
+                <div class="style-5">
+                    <header class="style-6" role="banner" data-themed="true"><a href="/" class="style-7">
+                                        
+                        <!-- <svg role="img" width="148" height="32" viewBox="0 0 148 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="style-8">
+                                <title class="style-9">Dollar Central Logo</title>
+                                <path d="M58.7596 12.3678C58.6288 12.4456 58.4732 12.4726 58.3232 12.4436C58.1731 12.4146 58.0396 12.3316 57.9488 12.211C57.5021 11.582 56.9029 11.0721 56.2051 10.7272C55.5073 10.3823 54.7329 10.2133 53.9519 10.2356C50.9066 10.2356 49.0376 12.5993 49.0376 15.975C49.0376 19.3508 50.9409 21.7593 53.9861 21.7593C54.7776 21.7779 55.5608 21.5979 56.2615 21.2366C56.9623 20.8752 57.5574 20.3444 57.9906 19.6943C58.0772 19.5721 58.2074 19.4862 58.3555 19.4537C58.5035 19.4212 58.6586 19.4444 58.79 19.5188L60.2365 20.3403C60.3155 20.3796 60.3849 20.4352 60.4401 20.5031C60.4952 20.5711 60.5348 20.6499 60.5561 20.7343C60.5774 20.8186 60.58 20.9064 60.5636 20.9918C60.5472 21.0772 60.5122 21.1581 60.4611 21.2291C59.7539 22.2689 58.7892 23.1155 57.6574 23.6896C56.5255 24.2637 55.2636 24.5465 53.9899 24.5114C49.1213 24.5114 45.821 21.0461 45.821 15.9937C45.821 10.9413 49.1213 7.52078 53.9176 7.52078C55.1701 7.48667 56.4119 7.75405 57.5347 8.29955C58.6575 8.84506 59.6269 9.65208 60.3583 10.65C60.4086 10.7173 60.4442 10.7939 60.4631 10.8752C60.4819 10.9565 60.4835 11.0407 60.4678 11.1226C60.4521 11.2045 60.4194 11.2824 60.3718 11.3514C60.3241 11.4205 60.2626 11.4791 60.1908 11.5239L58.7596 12.3678Z" fill="#ffffff" class="style-10"></path>
+                                <path d="M69.3896 23.5994V22.9123C68.6283 23.8757 67.5662 24.4732 65.8571 24.4732C63.3295 24.4732 61.5747 23.1176 61.5747 20.7389C61.5747 17.7777 64.266 17.2699 65.9256 17.0421C67.7071 16.7882 69.2259 16.6687 69.2259 15.526C69.2259 14.514 68.0345 14.2414 67.0257 14.2414C65.8678 14.2603 64.7302 14.5428 63.7026 15.0667C63.6313 15.1051 63.5527 15.129 63.4718 15.1368C63.3908 15.1446 63.309 15.1362 63.2314 15.1121C63.1539 15.088 63.0821 15.0487 63.0204 14.9966C62.9588 14.9445 62.9085 14.8807 62.8727 14.809L62.3512 13.741C62.2815 13.6027 62.2687 13.4433 62.3155 13.2959C62.3623 13.1486 62.465 13.0245 62.6025 12.9494C64.0417 12.1978 65.6465 11.8029 67.2769 11.7993C70.1776 11.7993 72.2255 12.9681 72.2255 15.7949V23.5994C72.2255 23.7578 72.1613 23.9098 72.0471 24.0218C71.9329 24.1339 71.778 24.1968 71.6164 24.1968H70.0253C69.9431 24.2004 69.861 24.1875 69.784 24.1591C69.707 24.1306 69.6367 24.0872 69.5773 24.0313C69.5179 23.9755 69.4706 23.9084 69.4384 23.8342C69.4061 23.76 69.3895 23.6801 69.3896 23.5994V23.5994ZM69.2259 18.2034C68.6663 18.6179 67.6348 18.7561 66.5347 18.9503C65.4346 19.1444 64.521 19.432 64.521 20.6045C64.521 21.6837 65.3166 22.1878 66.4661 22.1878C67.8936 22.1878 69.2259 21.4074 69.2259 19.5925V18.2034Z" fill="#ffffff" class="style-11"></path>
+                                <path d="M74.8509 21.1047C74.9536 20.9874 75.0986 20.9137 75.2555 20.8991C75.4123 20.8844 75.5689 20.93 75.6922 21.0263C76.7099 21.7802 77.9573 22.175 79.2323 22.1465C80.5456 22.1465 81.5163 21.732 81.5163 20.7238C81.5163 19.8052 80.6255 19.6222 78.471 19.2525C76.1871 18.8791 74.0021 18.1323 74.0021 15.5781C74.0021 12.9156 76.3431 11.7916 79.0115 11.7916C80.6849 11.7673 82.3184 12.2931 83.6517 13.2853C83.7168 13.3353 83.7708 13.3977 83.8104 13.4688C83.8501 13.5399 83.8746 13.6182 83.8824 13.6989C83.8903 13.7796 83.8813 13.861 83.856 13.9382C83.8307 14.0154 83.7897 14.0867 83.7355 14.1479L82.9742 15.0254C82.8732 15.1431 82.7302 15.2184 82.5744 15.2357C82.4186 15.2531 82.262 15.2112 82.1367 15.1188C81.1986 14.4457 80.0633 14.0893 78.9011 14.103C77.7782 14.103 76.7961 14.4242 76.7961 15.2943C76.7961 16.2614 78.1741 16.4444 79.5559 16.6759C82.506 17.18 84.3788 18.0053 84.3788 20.4101C84.3788 22.9344 82.3194 24.4953 79.0496 24.4953C77.2625 24.5489 75.5123 23.9889 74.1011 22.912C74.0378 22.8612 73.9854 22.7985 73.9471 22.7276C73.9087 22.6567 73.8851 22.579 73.8777 22.499C73.8702 22.4191 73.8791 22.3385 73.9037 22.262C73.9283 22.1854 73.9683 22.1144 74.0211 22.0532L74.8509 21.1047Z" fill="#ffffff" class="style-12"></path>
+                                <path d="M86.1927 23.5939V8.39569C86.1927 8.23723 86.2568 8.08527 86.3711 7.97322C86.4853 7.86117 86.6402 7.79822 86.8017 7.79822H88.5565C88.7181 7.79822 88.873 7.86117 88.9872 7.97322C89.1014 8.08527 89.1656 8.23723 89.1656 8.39569V13.5862C89.6025 13.0143 90.1725 12.5532 90.8281 12.2414C91.4837 11.9296 92.2058 11.7761 92.9341 11.7938C95.5302 11.7938 97.0528 13.6087 97.0528 16.2002V23.5939C97.0528 23.7524 96.9886 23.9044 96.8744 24.0164C96.7602 24.1285 96.6053 24.1914 96.4437 24.1914H94.6889C94.5274 24.1914 94.3725 24.1285 94.2583 24.0164C94.144 23.9044 94.0799 23.7524 94.0799 23.5939V16.8724C94.0799 15.5841 93.6573 14.4152 91.9748 14.4152C90.3799 14.4152 89.1656 15.5168 89.1656 17.3541V23.5977C89.1656 23.7561 89.1014 23.9081 88.9872 24.0202C88.873 24.1322 88.7181 24.1952 88.5565 24.1952H86.8017C86.7213 24.1957 86.6415 24.1804 86.5672 24.1503C86.4928 24.1203 86.4253 24.0759 86.3686 24.0199C86.3119 23.964 86.2671 23.8975 86.2369 23.8243C86.2067 23.7512 86.1917 23.6729 86.1927 23.5939V23.5939Z" fill="#ffffff" class="style-13"></path>
+                                <path d="M116.363 23.7902L115.099 20.1307H108.711L107.444 23.7902C107.403 23.9081 107.326 24.0104 107.223 24.0827C107.119 24.1551 106.996 24.1938 106.869 24.1935H104.81C104.712 24.1934 104.615 24.1701 104.528 24.1256C104.442 24.0811 104.367 24.0167 104.311 23.9379C104.255 23.8591 104.219 23.7683 104.207 23.673C104.194 23.5777 104.205 23.4809 104.239 23.3907L109.99 8.1887C110.036 8.07738 110.115 7.9822 110.217 7.91559C110.319 7.84898 110.439 7.81402 110.561 7.81528H113.374C113.499 7.81576 113.621 7.85352 113.724 7.92355C113.827 7.99357 113.905 8.09256 113.949 8.20737L119.678 23.4056C119.712 23.4961 119.723 23.5933 119.71 23.6889C119.697 23.7844 119.661 23.8755 119.605 23.9544C119.548 24.0333 119.473 24.0976 119.386 24.1418C119.298 24.186 119.202 24.2089 119.103 24.2085H116.93C116.803 24.2056 116.679 24.1638 116.578 24.0887C116.476 24.0137 116.401 23.9093 116.363 23.7902ZM111.939 10.4628L109.48 17.5802H114.303L111.939 10.4628Z" fill="#ffffff" class="style-14"></path>
+                                <path d="M124.088 12.6766V13.6177C124.52 13.0304 125.094 12.5573 125.758 12.2406C126.422 11.9239 127.156 11.7735 127.894 11.8028C131.263 11.8028 133.44 14.5363 133.44 18.1174C133.44 21.6985 131.263 24.4656 127.894 24.4656C127.154 24.493 126.419 24.3395 125.754 24.0187C125.09 23.698 124.517 23.2202 124.088 22.6283V27.5836C124.088 27.7421 124.024 27.8941 123.909 28.0061C123.795 28.1181 123.64 28.1811 123.479 28.1811H121.724C121.562 28.1811 121.407 28.1181 121.293 28.0061C121.179 27.8941 121.115 27.7421 121.115 27.5836V12.6468C121.115 12.4883 121.179 12.3363 121.293 12.2243C121.407 12.1122 121.562 12.0493 121.724 12.0493H123.479C123.561 12.0492 123.643 12.0656 123.719 12.0975C123.795 12.1293 123.863 12.176 123.92 12.2347C123.977 12.2934 124.022 12.3628 124.05 12.4388C124.079 12.5148 124.092 12.5957 124.088 12.6766ZM127.27 21.93C129.329 21.93 130.315 20.2048 130.315 18.1174C130.315 16.03 129.31 14.3496 127.27 14.3496C125.23 14.3496 124.088 16.0262 124.088 18.1174C124.088 20.2086 125.173 21.93 127.27 21.93Z" fill="#ffffff" class="style-15"></path>
+                                <path d="M138.244 12.6765V13.6175C138.677 13.0307 139.251 12.558 139.915 12.2414C140.579 11.9248 141.313 11.7741 142.051 11.8027C145.423 11.8027 147.601 14.5361 147.601 18.1172C147.601 21.6983 145.423 24.4654 142.051 24.4654C141.311 24.4922 140.576 24.3383 139.911 24.0177C139.247 23.697 138.674 23.2196 138.244 22.6282V27.5835C138.244 27.7419 138.18 27.8939 138.066 28.0059C137.952 28.118 137.797 28.1809 137.635 28.1809H135.88C135.719 28.1809 135.564 28.118 135.45 28.0059C135.336 27.8939 135.271 27.7419 135.271 27.5835V12.6466C135.271 12.4882 135.336 12.3362 135.45 12.2241C135.564 12.1121 135.719 12.0491 135.88 12.0491H137.635C137.718 12.0485 137.8 12.0645 137.876 12.0962C137.952 12.1279 138.021 12.1746 138.078 12.2334C138.135 12.2922 138.18 12.3618 138.208 12.4381C138.237 12.5143 138.249 12.5954 138.244 12.6765V12.6765ZM141.43 21.9299C143.49 21.9299 144.476 20.2047 144.476 18.1172C144.476 16.0298 143.471 14.3494 141.43 14.3494C139.39 14.3494 138.244 16.0261 138.244 18.1172C138.244 20.2084 139.344 21.9299 141.43 21.9299Z" fill="#ffffff" class="style-16"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3911 0.546667C25.6618 0 24.056 0 20.8436 0H11.1569C7.944 0 6.33778 0 4.60889 0.546667C2.72089 1.23378 1.23378 2.72089 0.546667 4.60889C0 6.33778 0 7.94444 0 11.1569V20.8431C0 24.056 0 25.6618 0.546667 27.3911C1.23378 29.2791 2.72089 30.7662 4.60889 31.4533C6.33778 32 7.944 32 11.1569 32H20.8436C24.056 32 25.6618 32 27.3911 31.4533C29.2791 30.7662 30.7662 29.2791 31.4533 27.3911C32 25.6618 32 24.056 32 20.8431V11.1569C32 7.94444 32 6.33778 31.4533 4.60889C30.7662 2.72089 29.2791 1.23378 27.3911 0.546667ZM20.6565 12.2971C19.6876 11.4372 18.2047 10.8107 16.6576 10.8107C15.4468 10.8107 14.2351 11.244 14.2351 12.3396C14.2351 13.3776 15.3413 13.7764 16.6911 14.2631C16.8035 14.3036 16.9176 14.3448 17.0329 14.3869C19.6574 15.281 21.8199 16.377 21.8199 18.9723C21.8199 21.7932 19.6499 23.7204 16.1043 23.9392L15.7822 25.4726C15.7237 25.7539 15.4743 25.9546 15.1872 25.9524L12.9561 25.9356C12.5733 25.9324 12.2902 25.5798 12.3695 25.2059L12.7093 23.6109C11.3137 23.2308 10.0909 22.5521 9.12512 21.6146C8.88101 21.378 8.8788 20.9855 9.12114 20.7467L10.3599 19.5248C10.5947 19.2931 10.9704 19.2949 11.2052 19.5266C12.4023 20.7068 13.9449 21.1928 15.4176 21.1928C17.0329 21.1928 18.1285 20.5296 18.1285 19.4047C18.1285 18.4136 17.2318 18.0827 15.5233 17.4522C15.3433 17.3858 15.1543 17.316 14.9564 17.2418C12.7647 16.4634 10.6882 15.3386 10.6882 12.714C10.6882 9.68231 13.198 8.20479 16.1592 8.05681L16.4848 6.52568C16.5442 6.24701 16.7905 6.04764 17.0754 6.04764H19.303C19.6867 6.04764 19.9724 6.4003 19.894 6.77555L19.5325 8.49719C20.8107 8.91586 21.8491 9.56978 22.6227 10.2348C22.8854 10.4603 22.8943 10.8643 22.651 11.1111L21.4982 12.2803C21.2683 12.5133 20.9015 12.5146 20.6565 12.2971Z" fill="#ffffff" class="style-17"></path>
+                            </svg></a> -->
+                            <div class="svg-container">
+                                <img class="svg-image" src="../../static/images/Dollar General Header (PNG) (1000 x 500 px) (3).svg" alt="Description" /> 
+                            </div>      
+                            <div class="style-18">
+                            <div class="style-19">
+                                <div class="style-20"><a class="style-21" target="_self" data-identifier="loginButton" data-cy="loginButton" href="/login" rel="">Log in</a></div>
+                            </div>
+                            <div class="style-19">
+                                <div class="style-20"><a class="style-21" target="_self" data-identifier="loginButton" data-cy="loginButton" href="/sign-up" rel="">Register</a></div>
+                            </div>
+
+                        </div>
+                    </header>
+                </div>
+                <nav aria-label="Navigation overlay" class="style-32">
+                    <div role="navigation" class="style-33" data-visible="false" data-scroll-lock-scrollable="true">
+                        <div class="style-34">
+                            <h1 class="style-35" data-name="main-title">Do more with your money</h1>
+                            <div class="style-36">
+                                <div class="style-37" data-name="main-nav"><a class="style-38" target="_self" href="/send" rel="">
+                                        <div class="style-39"><img src="https://images.ctfassets.net/jwea2w833xe7/1fu1UYPXnx7zaUNxp43p52/1ad96a1683a9f5df7d35b071f98c6152/Nav_assets_-_send.webp" class="style-40" alt="" /></div>
+                                        <h2 class="style-41">Send</h2>
+                                        <p class="style-42">Pay and get paid instantly</p>
+                                    </a><a class="style-43" target="_self" href="/spend" rel="">
+                                        <div class="style-44"><img src="https://images.ctfassets.net/jwea2w833xe7/661KAQKojgESgkhuionujB/d1d669f13879dfd0eec4ebbbc6aed859/Nav_assets_-_spend.webp" class="style-45" alt="" /></div>
+                                        <h2 class="style-46">Spend</h2>
+                                        <p class="style-47">Save on everyday spending</p>
+                                    </a><a class="style-48" target="_self" href="/bank" rel="">
+                                        <div class="style-49"><img src="https://images.ctfassets.net/jwea2w833xe7/3NUtO7wgYLWBi8etCk7V9U/f851535518c21303c0edfe70a73249f1/Nav_assets_-_bank.webp" class="style-50" alt="" /></div>
+                                        <h2 class="style-51">Bank</h2>
+                                        <p class="style-52">Faster, simpler banking</p>
+                                    </a><a class="style-53" target="_self" href="/stocks" rel="">
+                                        <div class="style-54"><img src="https://images.ctfassets.net/jwea2w833xe7/5qkBAlrL5gd5u3s6X2Bswz/9d508a52bbd5e95145bb9162dd015326/Nav_assets_-_stocks.webp" class="style-55" alt="" /></div>
+                                        <h2 class="style-56">Stocks</h2>
+                                        <p class="style-57">Buy stocks for as little as $1</p>
+                                    </a><a class="style-58" target="_self" href="/bitcoin" rel="">
+                                        <div class="style-59"><img src="https://images.ctfassets.net/jwea2w833xe7/1QSy5KwBzdJGxIWVKS9ngK/eb19ab1dbcf27555256673bf616e294f/Nav_assets_-_bitcoin.webp" class="style-60" alt="" /></div>
+                                        <h2 class="style-61">Bitcoin</h2>
+                                        <p class="style-62">Break into bitcoin</p>
+                                    </a><a class="style-63" target="_self" href="/taxes" rel="">
+                                        <div class="style-64"><img src="https://images.ctfassets.net/jwea2w833xe7/4RCAv1OryIme5i0zUBKpH7/d768b4683fb1050b42b0374cba57e31e/taxes-nav-item.webp" class="style-65" alt="" /></div>
+                                        <h2 class="style-66">Taxes</h2>
+                                        <p class="style-67">File for free and get your max refund</p>
+                                    </a></div>
+                                <div class="style-68" data-name="secondary-nav"><a class="style-69" target="_self" href="/card" rel="">
+                                        <div class="style-70"><img src="https://images.ctfassets.net/jwea2w833xe7/lhRF5dXOhM5KSXWl7yjTF/e92d381c25f7df2a7cbcdf5d4433cab0/CC_nav_item.png" class="style-71" alt="" /></div>
+                                        <div class="style-72">
+                                            <h2 class="style-73">Dollar Central Card</h2>
+                                            <p class="style-74">A card unlike any other</p>
+                                        </div>
+                                    </a><a class="style-75" target="_self" href="/savings" rel="">
+                                        <div class="style-76"><img src="https://images.ctfassets.net/jwea2w833xe7/3dESCm2uoF5rbrANWYaAMR/7ab3e0c268773dd4b61997522bd2f2cf/Nav_Savings.png" class="style-77" alt="" /></div>
+                                        <div class="style-78">
+                                            <h2 class="style-79">Savings</h2>
+                                            <p class="style-80">Set aside money for your goals</p>
+                                        </div>
+                                    </a><a class="style-81" target="_self" href="/families" rel="">
+                                        <div class="style-82"><img src="https://images.ctfassets.net/jwea2w833xe7/45RbAkgw97kevyWQG02cDj/f4bfd0f2b60823be6741e223029fd722/families-nav-item.webp" class="style-83" alt="" /></div>
+                                        <div class="style-84">
+                                            <h2 class="style-85">13 and up</h2>
+                                            <p class="style-86">Everyone 13 and up can now use Cash&nbsp;App</p>
+                                        </div>
+                                    </a><a class="style-87" target="_self" href="/security" rel="">
+                                        <div class="style-88"><img src="https://images.ctfassets.net/jwea2w833xe7/8SrNW8j5OUWsWlaa5L2M0/392b0433d69cde7654ce808d1c756d1c/Nav_Security.png" class="style-89" alt="" /></div>
+                                        <div class="style-90">
+                                            <h2 class="style-91">Security</h2>
+                                            <p class="style-92">A safe space for you and your money</p>
+                                        </div>
+                                    </a></div>
+                                <div class="style-93" data-name="learn-more">
+                                    <h3 class="style-94">Learn More</h3>
+                                    <ul class="style-95">
+                                        <li class="style-96"><a class="style-97" target="_self" href="/legal/us/en-us/tos" rel=""><span class="style-98">Legal</span></a></li>
+                                        <li class="style-99"><a class="style-100" target="_self" href="https://block.xyz/legal/licenses" rel=""><span class="style-101">Licenses</span></a></li>
+                                        <li class="style-102"><a class="style-103" target="_self" href="/careers" rel=""><span class="style-104">Careers</span></a></li>
+                                        <li class="style-105"><a class="style-106" target="_self" href="/press" rel=""><span class="style-107">Press</span></a></li>
+                                        <li class="style-108"><a class="style-109" target="_self" href="/reviews" rel=""><span class="style-110">Reviews</span></a></li>
+                                        <li class="style-111"><a class="style-112" target="_self" href="/support" rel=""><span class="style-113">Support</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="style-114" data-name="socials">
+                                    <h3 class="style-115">Stay in Touch</h3>
+                                    <ul class="style-116">
+                                        <li class="style-117"><a class="style-118" target="_self" href="https://twitter.com/cashapp" rel="noopener noreferrer"><svg role="img" width="20" height="20" viewBox="-50 -50 1300 1327" fill="none" xmlns="http://www.w3.org/2000/svg" class="style-119">
+                                                    <title class="style-120">X Logo</title>
+                                                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white" class="style-121"></path>
+                                                </svg></a></li>
+                                        <li class="style-122"><a class="style-123" target="_self" href="https://www.tiktok.com/@cashapp" rel="noopener noreferrer"><svg width="18" height="21" viewBox="0 0 18 21" fill="none" class="style-124">
+                                                    <title class="style-125">Tik Tok Logo</title>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2177 0.563477C13.547 3.39546 15.1276 5.08387 17.8758 5.26348V8.44871C16.2832 8.60438 14.8881 8.08349 13.2656 7.10158V13.0589C13.2656 20.6268 5.01513 22.9918 1.69818 17.5673C-0.43329 14.0767 0.871936 7.95177 7.7094 7.70629V11.0652C7.18851 11.149 6.63169 11.2807 6.12277 11.4543C4.60201 11.9692 3.73984 12.9332 3.97933 14.6336C4.44035 17.8906 10.4156 18.8546 9.9187 12.4901V0.569464H13.2177V0.563477Z" fill="white" class="style-126"></path>
+                                                </svg></a></li>
+                                        <li class="style-127"><a class="style-128" target="_self" href="https://www.twitch.tv/cashapp" rel="noopener noreferrer"><svg role="img" width="20" height="24" viewBox="0 0 20 24" fill="none" class="style-129">
+                                                    <title class="style-130">Twitch Logo</title>
+                                                    <path d="M4.34904 0.563965L0.253906 4.6591V19.4016H5.16807V23.4967L9.26321 19.4016H12.5393L19.9106 12.0304V0.563965H4.34904ZM18.2725 11.2113L14.9964 14.4874H11.7203L8.8537 17.354V14.4874H5.16807V2.20202H18.2725V11.2113Z" fill="white" class="style-131"></path>
+                                                    <path d="M15.8138 5.06885H14.1758V9.98301H15.8138V5.06885Z" fill="white" class="style-132"></path>
+                                                    <path d="M11.3138 5.06885H9.67578V9.98301H11.3138V5.06885Z" fill="white" class="style-133"></path>
+                                                </svg></a></li>
+                                        <li class="style-134"><a class="style-135" target="_self" href="https://instagram.com/cashapp" rel="noopener noreferrer"><svg role="img" width="21" height="21" viewBox="0 0 21 21" fill="none" class="style-136">
+                                                    <title class="style-137">Instagram Logo</title>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78717 0.602863C7.85251 0.555338 8.19311 0.543457 10.902 0.543457C13.6109 0.543457 13.9515 0.555338 15.0208 0.598903C16.0862 0.646427 16.8109 0.816724 17.4446 1.06227C18.0981 1.31969 18.6565 1.66029 19.2109 2.21474C19.7654 2.7692 20.1099 3.32366 20.3634 3.98108C20.6089 4.6187 20.7792 5.34346 20.8268 6.40484C20.8743 7.47019 20.8862 7.80682 20.8862 10.5197C20.8862 13.2326 20.8743 13.5692 20.8268 14.6345C20.7792 15.6999 20.6089 16.4246 20.3634 17.0583C20.106 17.7118 19.7654 18.2702 19.2109 18.8246C18.6565 19.3791 18.102 19.7237 17.4446 19.9771C16.807 20.2227 16.0822 20.393 15.0208 20.4405C13.9555 20.488 13.6189 20.4999 10.906 20.4999C8.19311 20.4999 7.85647 20.488 6.79113 20.4405C5.72578 20.393 5.00103 20.2227 4.36737 19.9771C3.7139 19.7197 3.15548 19.3791 2.60103 18.8246C2.04657 18.2702 1.70202 17.7157 1.44855 17.0583C1.20301 16.4207 1.03271 15.6959 0.985187 14.6345C0.937662 13.5692 0.925781 13.2286 0.925781 10.5197C0.925781 7.81078 0.937662 7.47019 0.985187 6.4088C1.03271 5.34346 1.20301 4.6187 1.44855 3.98504C1.70598 3.33158 2.04657 2.77316 2.60103 2.2187C3.15548 1.66425 3.70994 1.31969 4.36737 1.06623C5.00103 0.820685 5.72578 0.650388 6.78717 0.602863ZM14.9326 2.40071C13.8791 2.35319 13.5663 2.34131 10.9009 2.34131C8.23558 2.34131 7.92271 2.34923 6.86925 2.40071C5.89499 2.44428 5.36826 2.61062 5.01578 2.74527C4.54845 2.92349 4.21578 3.14131 3.86726 3.48982C3.51875 3.83834 3.30489 4.17101 3.12271 4.63834C2.9841 4.99081 2.82172 5.51755 2.77816 6.4918C2.73063 7.54527 2.71875 7.85814 2.71875 10.5235C2.71875 13.1888 2.73063 13.5017 2.77816 14.5552C2.82172 15.5294 2.98806 16.0562 3.12271 16.4086C3.30093 16.876 3.51875 17.2086 3.86726 17.5571C4.21578 17.9057 4.54845 18.1195 5.01578 18.3017C5.36826 18.4403 5.89499 18.6027 6.86925 18.6463C7.92271 18.6938 8.23558 18.7057 10.9009 18.7057C13.5663 18.7057 13.8791 18.6938 14.9326 18.6463C15.9069 18.6027 16.4336 18.4364 16.7861 18.3017C17.2534 18.1235 17.5861 17.9057 17.9346 17.5571C18.2831 17.2086 18.497 16.876 18.6791 16.4086C18.8178 16.0562 18.9801 15.5294 19.0237 14.5552C19.0712 13.5017 19.0831 13.1888 19.0831 10.5235C19.0831 7.85814 19.0712 7.54527 19.0237 6.4918C18.9801 5.51755 18.8138 4.99081 18.6791 4.63834C18.5009 4.17101 18.2831 3.83834 17.9346 3.48982C17.5861 3.14131 17.2534 2.92745 16.7861 2.74527C16.4336 2.60666 15.9069 2.44428 14.9326 2.40071Z" fill="white" class="style-138"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77734 10.5198C5.77734 7.68809 8.07437 5.39502 10.9021 5.39502C13.7298 5.39502 16.0268 7.69205 16.0268 10.5198C16.0268 13.3475 13.7298 15.6445 10.9021 15.6445C8.07437 15.6445 5.77734 13.3515 5.77734 10.5198ZM7.57422 10.5196C7.57422 12.3572 9.06333 13.8463 10.901 13.8463C12.7386 13.8463 14.2277 12.3572 14.2277 10.5196C14.2277 8.68198 12.7386 7.19287 10.901 7.19287C9.06333 7.19287 7.57422 8.68198 7.57422 10.5196Z" fill="white" class="style-139"></path>
+                                                    <path d="M16.2273 6.38915C16.8878 6.38915 17.4233 5.85366 17.4233 5.19311C17.4233 4.53256 16.8878 3.99707 16.2273 3.99707C15.5667 3.99707 15.0312 4.53256 15.0312 5.19311C15.0312 5.85366 15.5667 6.38915 16.2273 6.38915Z" fill="white" class="style-140"></path>
+                                                </svg></a></li>
+                                        <li class="style-141"><a class="style-142" target="_self" href="https://www.linkedin.com/company/cash-app" rel="noopener noreferrer"><svg role="img" width="21" height="21" viewBox="0 0 21 21" fill="none" class="style-143">
+                                                    <title class="style-144">LinkedIn Logo</title>
+                                                    <path d="M10.1163 8.10498V15.8225V8.10498ZM6.14062 8.10498V15.8225V8.10498Z" fill="white" class="style-145"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.30624 0.543457C1.36693 0.543457 0.605469 1.30492 0.605469 2.24422V18.7991C0.605469 19.7384 1.36693 20.4999 2.30624 20.4999H18.8611C19.8004 20.4999 20.5619 19.7384 20.5619 18.7991V2.24422C20.5619 1.30492 19.8004 0.543457 18.8611 0.543457H2.30624ZM7.5797 5.92285C7.5797 6.71934 6.93403 7.36502 6.13754 7.36502C5.34105 7.36502 4.69538 6.71934 4.69538 5.92285C4.69538 5.12637 5.34105 4.48069 6.13754 4.48069C6.93403 4.48069 7.5797 5.12637 7.5797 5.92285ZM4.8515 8.10561V15.8231H7.42401V8.10561H4.8515ZM11.3997 15.8231V11.1751C11.5302 10.5324 12.0094 9.97608 12.7667 9.97608C13.7022 9.97608 14.053 10.6777 14.053 11.7301V15.8227H16.6255V11.4182C16.6255 9.04062 15.3782 7.94925 13.6632 7.94925C12.3871 7.94925 11.7254 8.63588 11.3997 9.1392V8.10561H8.8272V15.8231H11.3997Z" fill="white" class="style-146"></path>
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <main class="style-147">
+                    <div class="style-148">
+                        <div class="style-149">
+                            <div class="style-150"></div>
+                            <div class="style-151"></div>
+                        </div>
+                        <div class="style-152"><svg class="style-153" data-logo="" width="25" viewBox="0 0 30.19 44.03">
+                                <path fill="#ffffff" d="M25.51,13.79a1.27,1.27,0,0,0,1.8,0l2.5-2.6a1.36,1.36,0,0,0-.06-1.94A19.75,19.75,0,0,0,23,5.41l.79-3.8A1.33,1.33,0,0,0,22.54,0H17.7a1.32,1.32,0,0,0-1.28,1.06l-.7,3.38C9.28,4.77,3.82,8,3.82,14.74c0,5.8,4.51,8.29,9.28,10,4.51,1.72,6.9,2.36,6.9,4.78s-2.38,3.95-5.9,3.95a12.76,12.76,0,0,1-9.16-3.68,1.3,1.3,0,0,0-1.84,0h0L.4,32.49a1.36,1.36,0,0,0,0,1.92,17.64,17.64,0,0,0,7.79,4.4l-.74,3.57A1.33,1.33,0,0,0,8.72,44l4.85,0A1.33,1.33,0,0,0,14.87,43l.7-3.39c7.75-.52,12.47-4.79,12.47-11,0-5.74-4.7-8.16-10.4-10.13-3.26-1.21-6.08-2-6.08-4.53s2.63-3.38,5.27-3.38a13.39,13.39,0,0,1,8.7,3.29Z" class="style-154"></path>
+                            </svg></div>
+                    </div>
+                    <div class="style-155">
+                        <section class="style-156">
+                            <div class="style-157">
+                                <div class="style-158">
+                                    <section class="style-159">
+                                        <div class="style-160">
+                                            <div class="style-161">
+                                                <div class="style-162">
+                                                    <div class="style-163">
+                                                        <h1 class="style-164"><span class="style-165">BANK<div class="style-166"></div></span><span class="style-165">THE WAY<div class="style-168"></div></span><span class="style-169">YOU WANT<div class="style-170"></div></span></h1>
+                                                    </div>
+                                                    <div class="style-171">
+                                                        <div class="style-172">
+                                                            <h2 class="style-173">A faster, easier way to bank—without all the noise</h2>
+                                                        </div>
+                                                        <div class="style-174">
+                                                            <div class="style-175">
+                                                                <div data-identifier="rich-text" class="style-176">
+                                                                    <div class="style-177">
+                                                                        <p class="style-178">Dollar Central is a financial services platform, not a bank. Banking services are provided by Dollar Central's bank partner(s). Prepaid debit cards issued by Genius Terminal.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="style-179">
+                                                    <figure class="style-180"><img loading="eager" src="https://images.ctfassets.net/jwea2w833xe7/3xQzbkOMxYsSaVLCIQJeLr/117002d85d92cb72b744116d363a4b2e/bank_desktop_layer_01.webp" alt="" class="style-181" /><img loading="eager" src="https://images.ctfassets.net/jwea2w833xe7/2inoSfPR3ROyR5SWL1VHND/e6fec27f8aba56c7725aa22e8a4c54a8/bank_desktop_layer_02.webp" alt="" class="style-182" /><img loading="eager" src="https://images.ctfassets.net/jwea2w833xe7/29MVRQN52gZ5mzeERWn7fl/6e0905fb853df590526d2d6c8cac7787/bank_desktop_layer_03.webp" alt="" class="style-183" /></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="style-184">
+                                        <section class="style-185">
+                                            <figure class="style-186"><img class="style-187" src="https://images.ctfassets.net/jwea2w833xe7/3feaNJPJ2ATWX4YfROAzHT/b738fc23ded3d2135d5196c5d49280b2/Banking_cashcard.png" height="100%" alt="" /></figure>
+                                            <div class="style-188">
+                                                <h2 class="style-189">A card unlike any&nbsp;other</h2>
+                                                <div data-identifier="rich-text" class="style-190">
+                                                    <div class="style-191">
+                                                        <p class="style-192">It’s the customizable, no-hidden-fee Visa® debit card that you can swipe anywhere. Order your Dollar Central Card today.</p>
+                                                        <div class="style-193"><a class="style-194" href="/card">Learn more</a></div>
+                                                        <div class="style-195">
+                                                            <div class="style-196">
+                                                                <div data-identifier="rich-text" class="style-197">
+                                                                    <div class="style-198">
+                                                                        <p class="style-199">Prepaid debit card issued by Sutton Bank.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="style-200"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="style-201">
+                                        <section class="style-202">
+                                            <div class="style-203" data-columns="1" data-alternate-content="false">
+                                                <div class="style-204">
+                                                    <h2 class="style-205">Payday comes&nbsp;early</h2>
+                                                </div>
+                                                <div class="style-206" data-columns="2" data-alternate-content="false"><img src="https://images.ctfassets.net/jwea2w833xe7/5vF3hEiSw5WzE56BxJTesT/20d22230be1640cc7516a1fb8113f1ee/Banking_directdeposit.png" class="style-207" alt="" />
+                                                    <div class="style-208">
+                                                        <div data-identifier="rich-text" class="style-209">
+                                                            <div class="style-210">
+                                                                <p class="style-211">Your paycheck drops up to 2 days early with direct deposit. Plus, ATM fees are covered when you direct deposit $300 or more in a month.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="style-212">
+                                        <section class="style-213">
+                                            <figure class="style-214"><img class="style-215" src="https://images.ctfassets.net/jwea2w833xe7/1IpAIv6LjNtBzfqRi8YtJ0/f98011deb667e6b354469e8d5426c32e/Banking_savings.png" height="100%" alt="" /></figure>
+                                            <div class="style-216">
+                                                <h2 class="style-217">Start saving</h2>
+                                                <div data-identifier="rich-text" class="style-218">
+                                                    <div class="style-219">
+                                                        <p class="style-220">Set money aside for a goal or rainy day, and watch it add up. Save automatically, when you want, or with your spare change.</p>
+                                                        <div class="style-221"><a class="style-222" href="/savings">Learn more</a></div>
+                                                        <p class="style-223"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="style-224">
+                                        <section class="style-225">
+                                            <div class="style-226" data-columns="1" data-alternate-content="false">
+                                                <div class="style-227">
+                                                    <h2 class="style-228">Keep your money&nbsp;safe</h2>
+                                                </div>
+                                                <div class="style-229" data-columns="2" data-alternate-content="false"><img src="https://images.ctfassets.net/jwea2w833xe7/5Q8W3EZLByh4fDW51FpXbp/0a67f077956b9c2f8332187dbb322078/asset_container.png" class="style-230" alt="" />
+                                                    <div class="style-231">
+                                                        <div data-identifier="rich-text" class="style-232">
+                                                            <div class="style-233">
+                                                                <p class="style-234">Advanced security features help protect your account and every transaction.</p>
+                                                                <div class="style-235"><a class="style-236" href="/security">Learn more</a></div>
+                                                                <p class="style-237"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="style-238">
+                                        <div class="style-239"><img src="https://images.ctfassets.net/jwea2w833xe7/7c2z4f3FdHZf4EFwPrYp4D/033106210b9d692e5a28e9d7030eb6db/value-prop-bottom.webp" width="100%" class="style-240" alt="" /></div>
+                                    </section>
+                                    <div class="style-241">
+                                        <div class="style-242" data-visible="true">
+                                            <div class="style-243">
+                                                <div class="style-244">
+                                                    <div class="style-245">
+                                                        <div class="style-246">Download Dollar Central</div>
+                                                    </div><img src="..\..\static\images\dollar general logo spin off.png" alt="Scan to Download Dollar Central" class="style-247" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="style-248">
+                            <div class="style-249">
+                                <div class="style-250" data-entry-id="oMvT41XPcla2WS4daae86">
+                                    <div class="style-251">
+                                        <div class="style-252" data-columns="1" data-alternate-content="false">
+                                            <div class="style-253">
+                                                <h2 class="style-254">Banking
+                                                    made better</h2>
+                                                <div data-identifier="rich-text" class="style-255">
+                                                    <div class="style-256">
+                                                        <p class="style-257">Get&nbsp;set&nbsp;up&nbsp;in&nbsp;seconds—all&nbsp;from&nbsp;the&nbsp;app.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="style-292">
+                            <div class="style-293">
+                                <div class="style-294" data-entry-id="6lG8K8pK8VNacORP5E5qWG">
+                                    <div class="style-295">
+                                        <div class="style-296">
+                                            <div class="style-297"><video data-testid="video" preload="none" muted="" loop="" playsinline="" class="style-298">
+                                                    <source src="https://cash-f.squarecdn.com/web/marketing/98bd89cb59c7d09b701b4c676ebb1df6b5cbd6d0/assets/images/home-2022/WEB_HERO_ANI-16x9_x264_RF30.mp4" type="video/mp4" class="style-299" />
+                                                </video><button class="style-300" aria-label="Play"><img src="https://cash-f.squarecdn.com/web/marketing/98bd89cb59c7d09b701b4c676ebb1df6b5cbd6d0/assets/images/components/background-video/btn-play.png" height="30" width="30" class="style-301" alt="Play" /></button></div>
+                                        </div>
+                                        <div class="style-302">
+                                            <h2 class="style-303">Download Dollar&nbsp;Central to get started</h2>
+                                            <div class="style-304">
+                                                <div class="style-305">
+                                                    <div class="style-306">
+                                                        <div class="style-307">Download
+                                                            Dollar&nbsp;Central</div>
+                                                    </div><img src="..\..\static\images\dollar general logo spin off.png" alt="Scan to download Dollar Central" class="style-308" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="style-504">
+                            <div class="style-505">
+                                <section class="style-506" data-entry-id="7C9RHuSGYdI01gdGrMbWyH">
+                                    <h3 class="style-507">Explore More</h3>
+                                    <figure class="style-508">
+                                        <figure class="style-509">
+                                            <div class="style-510"><a class="style-511" target="_self" href="/spend" rel="" tabindex="-1">
+                                                    <div class="style-512"><img class="style-513" src="https://images.ctfassets.net/jwea2w833xe7/3rdwtkHp6fSzcLuIZD3jAu/3afa30d4f3ca24d58e2cfd891e17d1ef/spend.webp" width="532" height="730" alt="" /></div>
+                                                    <div class="style-514">
+                                                        <h4 class="style-515">Save on everyday spending</h4><button class="style-516" type="button">Learn More</button>
+                                                    </div>
+                                                </a></div>
+                                        </figure>
+                                        <figure class="style-517">
+                                            <div class="style-518"><a class="style-519" target="_self" href="/stocks" rel="" tabindex="-1">
+                                                    <div class="style-520"><img class="style-521" src="https://images.ctfassets.net/jwea2w833xe7/5dXPF6X9AvjRUg5CAnWzBT/c7d60506b9fcea406e1c9e2e13e0c95f/stocks.webp" width="532" height="730" alt="" /></div>
+                                                    <div class="style-522">
+                                                        <h4 class="style-523">Slide into the stock market</h4><button class="style-524" type="button">Learn More</button>
+                                                    </div>
+                                                </a></div>
+                                        </figure>
+                                    </figure>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="style-525">
+                            <div class="style-526">
+                                <footer data-footer="true" class="style-527">
+                                    <div class="style-528">
+                                        <div class="style-529">
+                                            <h2 class="style-530">Do more with your money</h2>
+                                            <div class="style-531">
+                                                <div class="style-532">
+                                                    <div class="style-533">
+                                                        <div class="style-534">
+                                                            <div class="style-535">Download
+                                                                Dollar&nbsp;Central</div>
+                                                        </div><img src="..\..\static\images\dollar general logo spin off.png;" alt="Scan to download Dollar&nbsp;Central" class="style-536" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="style-537">
+                                            <div class="style-538">
+                                                <h3 class="style-539">Learn More</h3><a class="style-540" target="_blank" href="/legal/us/en-us/tos" rel="noopener noreferrer">Legal</a><a class="style-541" target="_blank" href="https://block.xyz/legal/licenses" rel="noopener noreferrer">Licenses</a><a class="style-542" target="_blank" href="/security" rel="noopener noreferrer">Security</a><a class="style-543" target="_blank" href="/careers" rel="noopener noreferrer">Careers</a><a class="style-544" target="_blank" href="/press" rel="noopener noreferrer">Press</a><a class="style-545" target="_blank" href="/reviews" rel="noopener noreferrer">Reviews</a><a class="style-546" target="_blank" href="/support" rel="noopener noreferrer">Support</a><a class="style-547" target="_blank" href="/help" rel="noopener noreferrer">Help</a><a class="style-548" target="_blank" href="https://status.cash.app/" rel="noopener noreferrer">Status</a>
+                                            </div>
+                                            <div class="style-549">
+                                                <div class="style-550">
+                                                    <h3 class="style-551">Stay in Touch</h3>
+                                                    <div class="style-552"><a class="style-553" target="_blank" href="https://twitter.com/cashapp" rel="noopener noreferrer"><svg role="img" width="20" height="20" viewBox="-50 -50 1300 1327" fill="none" xmlns="http://www.w3.org/2000/svg" class="style-554">
+                                                                <title class="style-555">X Logo</title>
+                                                                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white" class="style-556"></path>
+                                                            </svg></a><a class="style-557" target="_blank" href="https://instagram.com/cashapp" rel="noopener noreferrer"><svg role="img" width="21" height="21" viewBox="0 0 21 21" fill="none" class="style-558">
+                                                                <title class="style-559">Instagram Logo</title>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78717 0.602863C7.85251 0.555338 8.19311 0.543457 10.902 0.543457C13.6109 0.543457 13.9515 0.555338 15.0208 0.598903C16.0862 0.646427 16.8109 0.816724 17.4446 1.06227C18.0981 1.31969 18.6565 1.66029 19.2109 2.21474C19.7654 2.7692 20.1099 3.32366 20.3634 3.98108C20.6089 4.6187 20.7792 5.34346 20.8268 6.40484C20.8743 7.47019 20.8862 7.80682 20.8862 10.5197C20.8862 13.2326 20.8743 13.5692 20.8268 14.6345C20.7792 15.6999 20.6089 16.4246 20.3634 17.0583C20.106 17.7118 19.7654 18.2702 19.2109 18.8246C18.6565 19.3791 18.102 19.7237 17.4446 19.9771C16.807 20.2227 16.0822 20.393 15.0208 20.4405C13.9555 20.488 13.6189 20.4999 10.906 20.4999C8.19311 20.4999 7.85647 20.488 6.79113 20.4405C5.72578 20.393 5.00103 20.2227 4.36737 19.9771C3.7139 19.7197 3.15548 19.3791 2.60103 18.8246C2.04657 18.2702 1.70202 17.7157 1.44855 17.0583C1.20301 16.4207 1.03271 15.6959 0.985187 14.6345C0.937662 13.5692 0.925781 13.2286 0.925781 10.5197C0.925781 7.81078 0.937662 7.47019 0.985187 6.4088C1.03271 5.34346 1.20301 4.6187 1.44855 3.98504C1.70598 3.33158 2.04657 2.77316 2.60103 2.2187C3.15548 1.66425 3.70994 1.31969 4.36737 1.06623C5.00103 0.820685 5.72578 0.650388 6.78717 0.602863ZM14.9326 2.40071C13.8791 2.35319 13.5663 2.34131 10.9009 2.34131C8.23558 2.34131 7.92271 2.34923 6.86925 2.40071C5.89499 2.44428 5.36826 2.61062 5.01578 2.74527C4.54845 2.92349 4.21578 3.14131 3.86726 3.48982C3.51875 3.83834 3.30489 4.17101 3.12271 4.63834C2.9841 4.99081 2.82172 5.51755 2.77816 6.4918C2.73063 7.54527 2.71875 7.85814 2.71875 10.5235C2.71875 13.1888 2.73063 13.5017 2.77816 14.5552C2.82172 15.5294 2.98806 16.0562 3.12271 16.4086C3.30093 16.876 3.51875 17.2086 3.86726 17.5571C4.21578 17.9057 4.54845 18.1195 5.01578 18.3017C5.36826 18.4403 5.89499 18.6027 6.86925 18.6463C7.92271 18.6938 8.23558 18.7057 10.9009 18.7057C13.5663 18.7057 13.8791 18.6938 14.9326 18.6463C15.9069 18.6027 16.4336 18.4364 16.7861 18.3017C17.2534 18.1235 17.5861 17.9057 17.9346 17.5571C18.2831 17.2086 18.497 16.876 18.6791 16.4086C18.8178 16.0562 18.9801 15.5294 19.0237 14.5552C19.0712 13.5017 19.0831 13.1888 19.0831 10.5235C19.0831 7.85814 19.0712 7.54527 19.0237 6.4918C18.9801 5.51755 18.8138 4.99081 18.6791 4.63834C18.5009 4.17101 18.2831 3.83834 17.9346 3.48982C17.5861 3.14131 17.2534 2.92745 16.7861 2.74527C16.4336 2.60666 15.9069 2.44428 14.9326 2.40071Z" fill="white" class="style-560"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77734 10.5198C5.77734 7.68809 8.07437 5.39502 10.9021 5.39502C13.7298 5.39502 16.0268 7.69205 16.0268 10.5198C16.0268 13.3475 13.7298 15.6445 10.9021 15.6445C8.07437 15.6445 5.77734 13.3515 5.77734 10.5198ZM7.57422 10.5196C7.57422 12.3572 9.06333 13.8463 10.901 13.8463C12.7386 13.8463 14.2277 12.3572 14.2277 10.5196C14.2277 8.68198 12.7386 7.19287 10.901 7.19287C9.06333 7.19287 7.57422 8.68198 7.57422 10.5196Z" fill="white" class="style-561"></path>
+                                                                <path d="M16.2273 6.38915C16.8878 6.38915 17.4233 5.85366 17.4233 5.19311C17.4233 4.53256 16.8878 3.99707 16.2273 3.99707C15.5667 3.99707 15.0312 4.53256 15.0312 5.19311C15.0312 5.85366 15.5667 6.38915 16.2273 6.38915Z" fill="white" class="style-562"></path>
+                                                            </svg></a><a class="style-563" target="_blank" href="https://www.twitch.tv/cashapp" rel="noopener noreferrer"><svg role="img" width="20" height="24" viewBox="0 0 20 24" fill="none" class="style-564">
+                                                                <title class="style-565">Twitch Logo</title>
+                                                                <path d="M4.34904 0.563965L0.253906 4.6591V19.4016H5.16807V23.4967L9.26321 19.4016H12.5393L19.9106 12.0304V0.563965H4.34904ZM18.2725 11.2113L14.9964 14.4874H11.7203L8.8537 17.354V14.4874H5.16807V2.20202H18.2725V11.2113Z" fill="white" class="style-566"></path>
+                                                                <path d="M15.8138 5.06885H14.1758V9.98301H15.8138V5.06885Z" fill="white" class="style-567"></path>
+                                                                <path d="M11.3138 5.06885H9.67578V9.98301H11.3138V5.06885Z" fill="white" class="style-568"></path>
+                                                            </svg></a><a class="style-569" target="_blank" href="https://www.tiktok.com/@cashapp" rel="noopener noreferrer"><svg width="18" height="21" viewBox="0 0 18 21" fill="none" class="style-570">
+                                                                <title class="style-571">Tik Tok Logo</title>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2177 0.563477C13.547 3.39546 15.1276 5.08387 17.8758 5.26348V8.44871C16.2832 8.60438 14.8881 8.08349 13.2656 7.10158V13.0589C13.2656 20.6268 5.01513 22.9918 1.69818 17.5673C-0.43329 14.0767 0.871936 7.95177 7.7094 7.70629V11.0652C7.18851 11.149 6.63169 11.2807 6.12277 11.4543C4.60201 11.9692 3.73984 12.9332 3.97933 14.6336C4.44035 17.8906 10.4156 18.8546 9.9187 12.4901V0.569464H13.2177V0.563477Z" fill="white" class="style-572"></path>
+                                                            </svg></a><a class="style-573" target="_blank" href="https://www.linkedin.com/company/cash-app" rel="noopener noreferrer"><svg role="img" width="21" height="21" viewBox="0 0 21 21" fill="none" class="style-574">
+                                                                <title class="style-575">LinkedIn Logo</title>
+                                                                <path d="M10.1163 8.10498V15.8225V8.10498ZM6.14062 8.10498V15.8225V8.10498Z" fill="white" class="style-576"></path>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.30624 0.543457C1.36693 0.543457 0.605469 1.30492 0.605469 2.24422V18.7991C0.605469 19.7384 1.36693 20.4999 2.30624 20.4999H18.8611C19.8004 20.4999 20.5619 19.7384 20.5619 18.7991V2.24422C20.5619 1.30492 19.8004 0.543457 18.8611 0.543457H2.30624ZM7.5797 5.92285C7.5797 6.71934 6.93403 7.36502 6.13754 7.36502C5.34105 7.36502 4.69538 6.71934 4.69538 5.92285C4.69538 5.12637 5.34105 4.48069 6.13754 4.48069C6.93403 4.48069 7.5797 5.12637 7.5797 5.92285ZM4.8515 8.10561V15.8231H7.42401V8.10561H4.8515ZM11.3997 15.8231V11.1751C11.5302 10.5324 12.0094 9.97608 12.7667 9.97608C13.7022 9.97608 14.053 10.6777 14.053 11.7301V15.8227H16.6255V11.4182C16.6255 9.04062 15.3782 7.94925 13.6632 7.94925C12.3871 7.94925 11.7254 8.63588 11.3997 9.1392V8.10561H8.8272V15.8231H11.3997Z" fill="white" class="style-577"></path>
+                                                            </svg></a></div>
+                                                </div>
+                                                <div class="style-578">
+                                                    <h3 class="style-579">Contact Us</h3>
+                                                    <div data-identifier="rich-text" class="style-580">
+                                                        <div class="style-581">
+                                                            <p class="style-582"><strong class="style-583">1 (800) 969-1940</strong><br class="style-584" />Available daily, <br class="style-585" />9 AM- 7PM ET</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="style-586">
+                                                <div class="style-587">
+                                                    <div data-identifier="rich-text" class="style-588">
+                                                        <div class="style-589">
+                                                            <p class="style-590">Dollar Central is a financial services platform, not a bank. Banking services provided by Dollar Central’s bank partner(s). Prepaid debit cards issued by Sutton Bank.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="style-591">
+                                                    <div data-identifier="rich-text" class="style-592">
+                                                        <div class="style-593">
+                                                            <p class="style-594">Dollar Central waives ATM fees for all in-network withdrawals every month you have at least $300 direct deposited into your Cash balance. Additional information <a class="style-595" target="_self" href="https://cash.app/help/us/en-us/1114-cash-atm" rel=""><u class="style-596">here</u></a>.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="style-597">
+                                                    <div data-identifier="rich-text" class="style-598">
+                                                        <div class="style-599">
+                                                            <p class="style-600">Additional fees for securities may apply such as regulatory fees and fees to transfer securities externally. Please see our <a class="style-601" target="_self" href="https://cash.app/legal/us/en-us/cash-investing-house-rules" rel=""><u class="style-602">House Rules</u></a> for more information.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="style-603">
+                                                    <div data-identifier="rich-text" class="style-604">
+                                                        <div class="style-605">
+                                                            <p class="style-606">Brokerage services by Dollar Central Investing LLC, member FINRA/SIPC, subsidiary of Block, Inc. formerly known as Square, Inc. For more information please see the <a class="style-607" target="_self" href="https://cash.app/legal/us/en-us/disclosures-in-app" rel=""><u class="style-608">Dollar Central Investing disclosures</u></a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" role="presentation" class="style-609"></div>
+    <next-route-announcer class="style-610">
+        <p aria-live="assertive" role="alert" class="style-611"></p>
+    </next-route-announcer>
+</body>
+
+</html>

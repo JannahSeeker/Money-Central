@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='frontend/home.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+
+<body class="Page">
+  <div id="entire-form">
+    <div id="dimmer">
+    </div>
+    <div id="modalform">
+      <form method="POST" id="account-creation">
+        <div id="leveler">
+          <label for="selection" id="dropdown-prompt">What type of Account do you want:</label>
+          <a>
+            <div id="exit-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                <path
+                  d="M5.002 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-14c-1.103 0-2 .897-2 2v6.001H10V7l6 5-6 5v-3.999H3.002V19c0 1.103.897 2 2 2z">
+                </path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <br>
+
+        <select id="selection" name="selection" class="selections">
+          <option value="Savings" class="selections">Savings</option>
+          <option value="Checkings" class="selections">Checkings</option>
+          <option value="CD Account" class="selections">CD</option>
+        </select>
+
+        <button type="submit" id="submit-button">Create Account</button>
+      </form>
+    </div>
+  </div>
+  <section class="user-name">
+    <div class="user-name-text">Hello, {{user.first_name}}!</div>
+  </section>
+  <section class="balance-card-div">
+    {% for bankaccount in user.bankaccounts %}
+
+    <div class="fixed-module-card-div">
+      <div class="navbar-card-div">
+        <div class="ul-container">
+          <a href="/account/{{bankaccount.id}}" class="special-a">
+            <div class="inner-card-div">
+              <h1 class="special-text">{{bankaccount.type}}</h1>
+            </div>
+          </a>
+          <a href="/account/{{bankaccount.id}}" class="special-a">
+            <div class="inner-card-div">
+              <h1 class="special-text">${{bankaccount.balance}}</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+    <div class="fixed-module-card-div">
+      <a href="#" id="add-account-button">
+        <div class="navbar-card-div">
+          <div class="inner-card-div" id="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="139" height="139" viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+              <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4z"></path>
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+
+
+
+
+  </section>
+
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+    role="banner" class="vertical-navbar-created" id="navbar">
+    <div class="style-5">
+      <a href="#" class="style-6"></a>
+      <nav role="navigation" class="style-7">
+        <a href="/" class="individual-buttons">
+          <div class="button-text">Home</div>
+        </a>
+        <a href="/homeview" class="individual-buttons">
+          <div class="button-text">Accounts</div>
+        </a>
+
+
+      </nav>
+
+      <nav role="navigation" class="button-box" id="specialboxes">
+        <a href="/settings" class="individual-specialboxes" id="Settings">
+          <div class="button-text">Settings</div>
+        </a>
+        <a href="/settings" class="individual-specialboxes" id="Logout">
+
+          <div class="button-text">Logout</div>
+        </a>
+        <a href="#" class="individual-specialboxes" id="Help">
+
+          <div class="button-text">Help</div>
+        </a>
+      </nav>
+      <div class="style-11" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0"
+        aria-haspopup="menu" aria-expanded="false">
+        <div class="style-12"></div>
+      </div>
+    </div>
+    <div class="style-13" data-wf-ignore=""></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='frontend/index.js') }}"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
